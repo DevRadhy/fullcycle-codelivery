@@ -1,0 +1,13 @@
+version: "3"
+services:
+  app:
+    build: .
+    container_name: simulador
+    volumes:
+      - .:/go/src/
+    networks:
+      - imersaofc
+
+networks:
+  imersaofc:
+    external: true
